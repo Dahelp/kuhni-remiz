@@ -1,0 +1,497 @@
+[
+  {
+    "id": "kitchen-01",
+    "title": "Кухня №1",
+    "category": "Кухни",
+    "order": 1,
+    "cover": "assets/portfolio/kitchen-01/02.webp",
+    "images": [
+      "assets/portfolio/kitchen-01/01.webp",
+      "assets/portfolio/kitchen-01/02.webp",
+      "assets/portfolio/kitchen-01/03.webp"
+    ],
+    "featured": true,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Индивидуальная кухня, в которой архитектура фасадов, рабочие сценарии и хранение собраны в единую композицию.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "kitchen-02",
+    "title": "Кухня №2",
+    "category": "Кухни",
+    "order": 2,
+    "cover": "assets/portfolio/kitchen-02/01.webp",
+    "images": [
+      "assets/portfolio/kitchen-02/01.webp",
+      "assets/portfolio/kitchen-02/02.webp",
+      "assets/portfolio/kitchen-02/03.webp"
+    ],
+    "featured": false,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Индивидуальная кухня, в которой архитектура фасадов, рабочие сценарии и хранение собраны в единую композицию.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "kitchen-03",
+    "title": "Кухня №3",
+    "category": "Кухни",
+    "order": 3,
+    "cover": "assets/portfolio/kitchen-03/01.webp",
+    "images": [
+      "assets/portfolio/kitchen-03/01.webp",
+      "assets/portfolio/kitchen-03/02.webp",
+      "assets/portfolio/kitchen-03/03.webp"
+    ],
+    "featured": false,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Индивидуальная кухня, в которой архитектура фасадов, рабочие сценарии и хранение собраны в единую композицию.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "kitchen-04",
+    "title": "Кухня №4",
+    "category": "Кухни",
+    "order": 4,
+    "cover": "assets/portfolio/kitchen-04/02.webp",
+    "images": [
+      "assets/portfolio/kitchen-04/01.webp",
+      "assets/portfolio/kitchen-04/02.webp"
+    ],
+    "featured": true,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Индивидуальная кухня, в которой архитектура фасадов, рабочие сценарии и хранение собраны в единую композицию.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "wardrobe-01",
+    "title": "Гардеробная №1",
+    "category": "Гардеробные",
+    "order": 5,
+    "cover": "assets/portfolio/wardrobe-01/01.webp",
+    "images": [
+      "assets/portfolio/wardrobe-01/01.webp",
+      "assets/portfolio/wardrobe-01/02.webp"
+    ],
+    "featured": false,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Продуманная система хранения с точной геометрией, удобным наполнением и спокойной интерьерной подачей.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "wardrobe-02",
+    "title": "Гардеробная №2",
+    "category": "Гардеробные",
+    "order": 6,
+    "cover": "assets/portfolio/wardrobe-02/03.webp",
+    "images": [
+      "assets/portfolio/wardrobe-02/01.webp",
+      "assets/portfolio/wardrobe-02/02.webp",
+      "assets/portfolio/wardrobe-02/03.webp"
+    ],
+    "featured": true,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Продуманная система хранения с точной геометрией, удобным наполнением и спокойной интерьерной подачей.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "wardrobe-03",
+    "title": "Гардеробная №3",
+    "category": "Гардеробные",
+    "order": 7,
+    "cover": "assets/portfolio/wardrobe-03/03.webp",
+    "images": [
+      "assets/portfolio/wardrobe-03/01.webp",
+      "assets/portfolio/wardrobe-03/02.webp",
+      "assets/portfolio/wardrobe-03/03.webp"
+    ],
+    "featured": false,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Продуманная система хранения с точной геометрией, удобным наполнением и спокойной интерьерной подачей.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "wardrobe-04",
+    "title": "Гардеробная №4",
+    "category": "Гардеробные",
+    "order": 8,
+    "cover": "assets/portfolio/wardrobe-04/01.webp",
+    "images": [
+      "assets/portfolio/wardrobe-04/01.webp",
+      "assets/portfolio/wardrobe-04/02.webp",
+      "assets/portfolio/wardrobe-04/03.webp"
+    ],
+    "featured": true,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Продуманная система хранения с точной геометрией, удобным наполнением и спокойной интерьерной подачей.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "tv-wall-01",
+    "title": "ТВ-зона №1",
+    "category": "ТВ-зоны",
+    "order": 9,
+    "cover": "assets/portfolio/tv-wall-01/02.webp",
+    "images": [
+      "assets/portfolio/tv-wall-01/01.webp",
+      "assets/portfolio/tv-wall-01/02.webp"
+    ],
+    "featured": false,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Мебельная композиция для гостиной, объединяющая хранение, свет и выразительные отделочные материалы.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "tv-wall-02",
+    "title": "ТВ-зона №2",
+    "category": "ТВ-зоны",
+    "order": 10,
+    "cover": "assets/portfolio/tv-wall-02/01.webp",
+    "images": [
+      "assets/portfolio/tv-wall-02/01.webp",
+      "assets/portfolio/tv-wall-02/02.webp"
+    ],
+    "featured": true,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Мебельная композиция для гостиной, объединяющая хранение, свет и выразительные отделочные материалы.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "tv-wall-03",
+    "title": "ТВ-зона №3",
+    "category": "ТВ-зоны",
+    "order": 11,
+    "cover": "assets/portfolio/tv-wall-03/02.webp",
+    "images": [
+      "assets/portfolio/tv-wall-03/01.webp",
+      "assets/portfolio/tv-wall-03/02.webp"
+    ],
+    "featured": false,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Мебельная композиция для гостиной, объединяющая хранение, свет и выразительные отделочные материалы.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "cabinet-01",
+    "title": "Шкаф №1",
+    "category": "Шкафы",
+    "order": 12,
+    "cover": "assets/portfolio/cabinet-01/03.webp",
+    "images": [
+      "assets/portfolio/cabinet-01/01.webp",
+      "assets/portfolio/cabinet-01/02.webp",
+      "assets/portfolio/cabinet-01/03.webp"
+    ],
+    "featured": false,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Шкаф по индивидуальным размерам: фасады, внутреннее наполнение и детали разработаны под конкретное пространство.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "cabinet-02",
+    "title": "Шкаф №2",
+    "category": "Шкафы",
+    "order": 13,
+    "cover": "assets/portfolio/cabinet-02/01.webp",
+    "images": [
+      "assets/portfolio/cabinet-02/01.webp",
+      "assets/portfolio/cabinet-02/02.webp",
+      "assets/portfolio/cabinet-02/03.webp"
+    ],
+    "featured": false,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Шкаф по индивидуальным размерам: фасады, внутреннее наполнение и детали разработаны под конкретное пространство.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "cabinet-03",
+    "title": "Шкаф №3",
+    "category": "Шкафы",
+    "order": 14,
+    "cover": "assets/portfolio/cabinet-03/02.webp",
+    "images": [
+      "assets/portfolio/cabinet-03/01.webp",
+      "assets/portfolio/cabinet-03/02.webp",
+      "assets/portfolio/cabinet-03/03.webp"
+    ],
+    "featured": false,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Шкаф по индивидуальным размерам: фасады, внутреннее наполнение и детали разработаны под конкретное пространство.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "cabinet-04",
+    "title": "Шкаф №4",
+    "category": "Шкафы",
+    "order": 15,
+    "cover": "assets/portfolio/cabinet-04/02.webp",
+    "images": [
+      "assets/portfolio/cabinet-04/01.webp",
+      "assets/portfolio/cabinet-04/02.webp",
+      "assets/portfolio/cabinet-04/03.webp"
+    ],
+    "featured": false,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Шкаф по индивидуальным размерам: фасады, внутреннее наполнение и детали разработаны под конкретное пространство.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "cabinet-05",
+    "title": "Шкаф №5",
+    "category": "Шкафы",
+    "order": 16,
+    "cover": "assets/portfolio/cabinet-05/01.webp",
+    "images": [
+      "assets/portfolio/cabinet-05/01.webp",
+      "assets/portfolio/cabinet-05/02.webp",
+      "assets/portfolio/cabinet-05/03.webp"
+    ],
+    "featured": false,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Шкаф по индивидуальным размерам: фасады, внутреннее наполнение и детали разработаны под конкретное пространство.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "cabinet-06",
+    "title": "Шкаф №6",
+    "category": "Шкафы",
+    "order": 17,
+    "cover": "assets/portfolio/cabinet-06/01.webp",
+    "images": [
+      "assets/portfolio/cabinet-06/01.webp",
+      "assets/portfolio/cabinet-06/02.webp",
+      "assets/portfolio/cabinet-06/03.webp"
+    ],
+    "featured": true,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Шкаф по индивидуальным размерам: фасады, внутреннее наполнение и детали разработаны под конкретное пространство.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "cabinet-07",
+    "title": "Шкаф №7",
+    "category": "Шкафы",
+    "order": 18,
+    "cover": "assets/portfolio/cabinet-07/02.webp",
+    "images": [
+      "assets/portfolio/cabinet-07/01.webp",
+      "assets/portfolio/cabinet-07/02.webp",
+      "assets/portfolio/cabinet-07/03.webp"
+    ],
+    "featured": false,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Шкаф по индивидуальным размерам: фасады, внутреннее наполнение и детали разработаны под конкретное пространство.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "cabinet-08",
+    "title": "Шкаф №8",
+    "category": "Шкафы",
+    "order": 19,
+    "cover": "assets/portfolio/cabinet-08/01.webp",
+    "images": [
+      "assets/portfolio/cabinet-08/01.webp",
+      "assets/portfolio/cabinet-08/02.webp",
+      "assets/portfolio/cabinet-08/03.webp"
+    ],
+    "featured": true,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Шкаф по индивидуальным размерам: фасады, внутреннее наполнение и детали разработаны под конкретное пространство.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "cabinet-09",
+    "title": "Шкаф №9",
+    "category": "Шкафы",
+    "order": 20,
+    "cover": "assets/portfolio/cabinet-09/02.webp",
+    "images": [
+      "assets/portfolio/cabinet-09/01.webp",
+      "assets/portfolio/cabinet-09/02.webp",
+      "assets/portfolio/cabinet-09/03.webp"
+    ],
+    "featured": false,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Шкаф по индивидуальным размерам: фасады, внутреннее наполнение и детали разработаны под конкретное пространство.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "cabinet-10",
+    "title": "Шкаф №10",
+    "category": "Шкафы",
+    "order": 21,
+    "cover": "assets/portfolio/cabinet-10/02.webp",
+    "images": [
+      "assets/portfolio/cabinet-10/01.webp",
+      "assets/portfolio/cabinet-10/02.webp",
+      "assets/portfolio/cabinet-10/03.webp"
+    ],
+    "featured": false,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Шкаф по индивидуальным размерам: фасады, внутреннее наполнение и детали разработаны под конкретное пространство.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "cabinet-11",
+    "title": "Шкаф №11",
+    "category": "Шкафы",
+    "order": 22,
+    "cover": "assets/portfolio/cabinet-11/02.webp",
+    "images": [
+      "assets/portfolio/cabinet-11/01.webp",
+      "assets/portfolio/cabinet-11/02.webp",
+      "assets/portfolio/cabinet-11/03.webp"
+    ],
+    "featured": true,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Шкаф по индивидуальным размерам: фасады, внутреннее наполнение и детали разработаны под конкретное пространство.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "cabinet-12",
+    "title": "Шкаф №12",
+    "category": "Шкафы",
+    "order": 23,
+    "cover": "assets/portfolio/cabinet-12/02.webp",
+    "images": [
+      "assets/portfolio/cabinet-12/01.webp",
+      "assets/portfolio/cabinet-12/02.webp",
+      "assets/portfolio/cabinet-12/03.webp"
+    ],
+    "featured": false,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Шкаф по индивидуальным размерам: фасады, внутреннее наполнение и детали разработаны под конкретное пространство.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "cabinet-13",
+    "title": "Шкаф №13",
+    "category": "Шкафы",
+    "order": 24,
+    "cover": "assets/portfolio/cabinet-13/02.webp",
+    "images": [
+      "assets/portfolio/cabinet-13/01.webp",
+      "assets/portfolio/cabinet-13/02.webp",
+      "assets/portfolio/cabinet-13/03.webp"
+    ],
+    "featured": false,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Шкаф по индивидуальным размерам: фасады, внутреннее наполнение и детали разработаны под конкретное пространство.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  },
+  {
+    "id": "cabinet-14",
+    "title": "Шкаф №14",
+    "category": "Шкафы",
+    "order": 25,
+    "cover": "assets/portfolio/cabinet-14/01.webp",
+    "images": [
+      "assets/portfolio/cabinet-14/01.webp",
+      "assets/portfolio/cabinet-14/02.webp",
+      "assets/portfolio/cabinet-14/03.webp"
+    ],
+    "featured": false,
+    "subtitle": "Индивидуальный проект · Москва",
+    "description": "Шкаф по индивидуальным размерам: фасады, внутреннее наполнение и детали разработаны под конкретное пространство.",
+    "details": [
+      "Индивидуальные размеры",
+      "Подбор материалов",
+      "Производство Remiz"
+    ]
+  }
+]

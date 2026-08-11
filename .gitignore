@@ -1,0 +1,24 @@
+# Local and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# Source archives and temporary exports
+*.zip
+*.rar
+*.7z
+tmp/
+temp/
+_incoming/
+
+# Environment and dependencies
+.env
+.env.*
+!.env.example
+node_modules/
+
+# Generated review artifacts
+screenshots/
+review/

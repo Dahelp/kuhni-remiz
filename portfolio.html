@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Портфолио кухонь, шкафов, гардеробных и ТВ-зон Remiz по индивидуальным проектам.">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Проекты Remiz — кухни и мебель на заказ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Prata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body class="inner-page">
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header inner-header" id="top">
+    <a class="brand" href="index.html" aria-label="Remiz, на главную"><span class="brand-mark">R</span><span>REMIZ</span></a>
+    <nav class="desktop-nav" aria-label="Основная навигация"><a href="portfolio.html" aria-current="page">Проекты</a><a href="index.html#approach">О нас</a><a href="index.html#materials">Материалы</a><a href="index.html#process">Как работаем</a></nav>
+    <div class="header-side"><a class="phone" href="tel:+74957447222">+7 (495) 744-72-22</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button></div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Мобильная навигация"><a href="portfolio.html">Проекты</a><a href="index.html#approach">О нас</a><a href="index.html#materials">Материалы</a><a href="index.html#process">Как работаем</a><a href="index.html#contact">Обсудить проект</a></nav>
+  </header>
+  <main>
+    <section class="portfolio-intro">
+      <p class="kicker">Портфолио Remiz</p>
+      <h1>Мебель как часть<br><em>архитектуры дома</em></h1>
+      <div class="portfolio-intro-bottom"><p>25 индивидуальных проектов. Пока мы используем рабочие номера — позже здесь появятся авторские названия и подробности каждой реализации.</p><span id="projects-count">25 проектов</span></div>
+    </section>
+    <section class="portfolio-content">
+      <div class="portfolio-filters" role="group" aria-label="Фильтр проектов">
+        <button class="active" type="button" data-filter="Все">Все</button>
+        <button type="button" data-filter="Кухни">Кухни</button>
+        <button type="button" data-filter="Гардеробные">Гардеробные</button>
+        <button type="button" data-filter="ТВ-зоны">ТВ-зоны</button>
+        <button type="button" data-filter="Шкафы">Шкафы</button>
+      </div>
+      <div class="portfolio-grid" id="portfolio-grid" aria-live="polite"></div>
+    </section>
+    <section class="portfolio-cta"><p class="kicker light">Ваш проект может быть следующим</p><h2>Создадим мебель<br><em>для вашего пространства</em></h2><a class="button button-light" href="index.html#contact"><span>Обсудить проект</span><b>↗</b></a></section>
+  </main>
+  <footer><div class="footer-top"><a class="brand" href="index.html"><span class="brand-mark">R</span><span>REMIZ</span></a><p>Кухни и мебель<br>по индивидуальным проектам</p><a href="tel:+74957447222">+7 (495) 744-72-22</a></div><div class="footer-bottom"><span>© 2026 Remiz</span><span>Москва и Московская область</span><a href="#">Политика конфиденциальности</a></div></footer>
+  <script src="projects-data.js"></script>
+  <script src="portfolio.js"></script>
+</body>
+</html>
