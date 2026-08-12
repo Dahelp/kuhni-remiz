@@ -7,6 +7,7 @@ if (project) {
   const next = projects[(index + 1) % projects.length];
   document.title = `${project.title} — проект Remiz`;
   document.querySelector('meta[name="description"]').content = `${project.title}. ${project.description}`;
+  document.querySelector('link[rel="canonical"]').href = `https://kuhni-remiz.ru/project.html?id=${encodeURIComponent(project.id)}`;
   document.querySelector('#project-hero').style.backgroundImage = `url('${project.cover}')`;
   document.querySelector('#project-category').textContent = project.category;
   document.querySelector('#project-title').textContent = project.title;

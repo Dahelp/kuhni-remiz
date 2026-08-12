@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /send.php
+
+Host: kuhni-remiz.ru
+Sitemap: https://kuhni-remiz.ru/sitemap.xml

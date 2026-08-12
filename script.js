@@ -40,7 +40,29 @@ document.querySelectorAll('.material-row').forEach(row => row.addEventListener('
   row.classList.add('active');
 }));
 
-document.querySelector('.contact-form')?.addEventListener('submit', event => {
+document.querySelector('[data-lead-form]')?.addEventListener('submit', async event => {
   event.preventDefault();
-  event.currentTarget.querySelector('.form-status').textContent = 'Спасибо! Форма работает в демонстрационном режиме.';
+  const form = event.currentTarget;
+  const status = form.querySelector('.form-status');
+  const button = form.querySelector('button[type="submit"]');
+  status.textContent = 'Отправляем заявку…';
+  button.disabled = true;
+
+  try {
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { Accept: 'application/json' }
+    });
+    const responseText = await response.text();
+    const jsonStart = responseText.indexOf('{');
+    const result = JSON.parse(jsonStart >= 0 ? responseText.slice(jsonStart) : responseText);
+    if (!response.ok || !result.ok) throw new Error(result.message || 'Не удалось отправить заявку');
+    form.reset();
+    status.textContent = result.message;
+  } catch (error) {
+    status.textContent = `${error.message}. Позвоните нам: +7 926 212 86 77.`;
+  } finally {
+    button.disabled = false;
+  }
 });

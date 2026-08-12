@@ -1,0 +1,9 @@
+{
+  "name":"REMIZ — кухни и мебель на заказ",
+  "short_name":"REMIZ",
+  "lang":"ru",
+  "start_url":"/",
+  "display":"standalone",
+  "background_color":"#f7f5f1",
+  "theme_color":"#20231f"
+}
