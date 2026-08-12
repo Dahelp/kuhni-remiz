@@ -1,0 +1,41 @@
+name: Deploy website via FTP
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: production-ftp-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Publish kuhni-remiz.ru
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Upload website
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: radio.gohost.ru
+          port: 21
+          protocol: ftp
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./
+          server-dir: ./
+          log-level: minimal
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/node_modules/**
+            README.md
+            assets/portfolio/manifest.json
