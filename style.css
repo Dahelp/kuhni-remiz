@@ -30,3 +30,38 @@ footer{padding:60px 7.8vw 28px;background:#171715;color:white}.footer-top{displa
 /* Keep the hero CTA fully inside the image at every desktop height. */
 .hero-copy{top:42%;transform:translateY(-42%);padding-bottom:0}.hero-copy .button{position:relative;z-index:3}.hero-meta{bottom:28px}.hero-shade{background:linear-gradient(90deg,rgba(25,25,22,.62),rgba(25,25,22,.08) 76%),linear-gradient(0deg,rgba(25,25,22,.38),transparent 58%)}
 @media(max-height:820px) and (min-width:901px){.hero{min-height:780px}.hero-copy{top:40%;transform:translateY(-40%)}.hero-copy h1{font-size:clamp(50px,5vw,76px)}.hero-copy .kicker{margin-bottom:16px}.hero-lead{margin:18px 0 24px}}
+
+/* REMIZ premium visual system — warm stone, champagne brass and eucalyptus. */
+:root{--milk:#eee5d8;--paper:#f8f4ed;--ink:#211d19;--sage:#657064;--clay:#a36f4b;--champagne:#b48a60;--wine:#5b3d36;--line:rgba(52,43,35,.16)}
+body{background:#f8f4ed;color:var(--ink)}
+.noise{opacity:.022}
+.site-header{height:88px;padding-left:4vw;padding-right:4vw;background:linear-gradient(180deg,rgba(29,25,21,.42),transparent);border-bottom-color:rgba(255,255,255,.3)}
+.site-header.is-scrolled{height:74px;background:rgba(248,244,237,.94);color:var(--ink);border-bottom:1px solid rgba(52,43,35,.13);box-shadow:0 12px 34px rgba(52,43,35,.08)}
+.site-header.is-scrolled .menu-toggle span{background:var(--ink)}
+.brand-mark{width:38px;height:38px;border-color:var(--champagne)}
+.desktop-nav{gap:40px}.desktop-nav a{position:relative}.desktop-nav a:after{content:"";position:absolute;left:0;right:100%;bottom:-8px;height:1px;background:var(--champagne);transition:.3s}.desktop-nav a:hover:after{right:0}
+.hero-shade{background:linear-gradient(90deg,rgba(37,29,23,.5),rgba(37,29,23,.04) 72%),linear-gradient(0deg,rgba(37,29,23,.28),transparent 55%)}
+.hero-copy h1{letter-spacing:-.035em;text-shadow:0 3px 24px rgba(31,24,18,.18)}
+.hero-copy h1 em{color:#efe3d2}.hero-lead{color:rgba(255,255,255,.86);font-size:16px;line-height:1.75}
+.button{min-height:58px;padding:0 22px;display:inline-flex;align-items:center;justify-content:space-between;gap:40px;letter-spacing:.12em;transition:transform .25s,background .25s,color .25s,box-shadow .25s}
+.button:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(43,34,27,.14)}
+.button-light{background:#f7f1e8;color:#2a241f}.button-light:hover{background:#d9b58d}
+.hero-meta{border-top:1px solid rgba(255,255,255,.28);padding-top:18px}.hero-meta span{font-size:9px;letter-spacing:.13em;color:rgba(255,255,255,.83)}
+.section{padding-top:145px;padding-bottom:145px}.section-index,.kicker{color:#98704f}.kicker{letter-spacing:.2em}
+.manifesto{background:radial-gradient(circle at 78% 18%,rgba(189,155,115,.16),transparent 30%),#f8f4ed}
+.manifesto h2 em,.section-heading h2 em,.process h2 em{color:#7c766d}
+.numbers{border-color:rgba(163,111,75,.3)}.numbers div{border-color:rgba(163,111,75,.22)}.numbers strong{color:#8c5f42}.numbers span{color:#5e554d}
+.projects{background:linear-gradient(145deg,#e9dfd1 0%,#f5eee4 58%,#e3d5c4 100%)}
+.project-grid{gap:28px}.project-card{box-shadow:0 24px 60px rgba(64,50,38,.12)}.project-card img{filter:saturate(.9) contrast(1.02)}.project-card:after{background:linear-gradient(transparent,rgba(39,29,22,.67))}.project-info{left:34px;right:34px;bottom:30px}
+.approach{background:#f5efe6;color:var(--ink);grid-template-columns:1.04fr .96fr;position:relative}.approach:after{content:"";position:absolute;right:0;top:0;width:8px;height:100%;background:linear-gradient(#b38962,#7e5944)}
+.approach-image{margin:48px 0 48px 4vw;min-height:720px;box-shadow:0 30px 70px rgba(66,49,36,.16)}.approach-image img{filter:saturate(.82);transform:scale(1.01)}
+.approach-copy{padding-right:7vw}.approach-copy h2 em{color:#9a6a4f}.approach-copy>p:not(.kicker){color:#5e554d}.approach-copy li{border-color:rgba(82,65,52,.18)}.approach-copy li b{color:#a36f4b}.approach-copy .kicker{color:#98704f}.approach-copy .button-outline{border-color:#a36f4b;color:#5b3d36}
+.materials{background:linear-gradient(180deg,#fbf8f3,#f3ece2)}.material-list{border-color:rgba(163,111,75,.22)}.material-row{border-color:rgba(163,111,75,.2)}.material-row:hover,.material-row.active{background:linear-gradient(90deg,rgba(180,138,96,.18),rgba(255,255,255,.5));color:#5b3d36}
+.process{background:linear-gradient(135deg,#d9ded7,#edf0ea 55%,#e7ddd0)}.timeline article{border-color:rgba(74,73,64,.18)}.timeline h3{color:#55443a}.timeline>article>span{color:#a36f4b}
+.contact{background:linear-gradient(125deg,#65483f 0%,#79574b 52%,#5c665d 140%);position:relative;overflow:hidden}.contact:before{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(216,181,141,.24);border-radius:50%;right:-170px;top:-230px}.contact>*{position:relative}.contact h2 em{color:#e2c6a5}.contact-copy>p:last-child{color:rgba(255,255,255,.8)}.contact-form{padding:45px;background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(8px)}
+footer{padding:78px 7.8vw 38px;background:linear-gradient(120deg,#5b4b43,#6b5b51);color:#fffaf3}
+.footer-top{padding-bottom:55px;align-items:center}.footer-top .brand{font-size:17px}.footer-top .brand-mark{width:44px;height:44px}.footer-top p{color:rgba(255,250,243,.82);font-size:15px;line-height:1.75}.footer-top>a:last-child{font-size:25px;color:#ead3b8}
+.footer-seo-nav{gap:18px 34px;padding:28px 0 34px;border-top:1px solid rgba(255,255,255,.14);font-size:13px;line-height:1.5;color:rgba(255,250,243,.86);letter-spacing:.06em}.footer-seo-nav a{padding:4px 0;border-bottom:1px solid transparent}.footer-seo-nav a:hover{color:#fff;border-color:#d9b58d}
+.footer-bottom{padding-top:28px;color:rgba(255,250,243,.66);font-size:11px;line-height:1.6;letter-spacing:.08em}
+@media(max-width:900px){.approach-image{margin:28px 6vw 0;min-height:540px}.contact-form{padding:32px}.footer-seo-nav{font-size:12px}}
+@media(max-width:600px){.site-header{height:72px}.section{padding-top:90px;padding-bottom:90px}.approach-image{min-height:410px;margin:22px 5vw 0}.contact-form{padding:26px 20px}.footer-top{gap:34px}.footer-top p{font-size:14px}.footer-seo-nav{display:grid;grid-template-columns:1fr 1fr;gap:16px 20px;font-size:12px}.footer-bottom{font-size:10px}}
