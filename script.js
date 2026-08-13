@@ -6,7 +6,7 @@ const featuredContainer = document.querySelector('#featured-projects');
 if (featuredContainer && window.REMIZ_PROJECTS) {
   const featured = window.REMIZ_PROJECTS.filter(project => project.featured).slice(0, 3);
   featuredContainer.innerHTML = featured.map((project, index) => `
-    <a class="project-card ${index === 0 ? 'project-main' : ''} reveal" href="project.html?id=${project.id}">
+    <a class="project-card ${index === 0 ? 'project-main' : ''} reveal" href="/proekty/${project.id}/">
       <img src="${project.cover}" alt="${project.title}" loading="${index === 0 ? 'eager' : 'lazy'}">
       <div class="project-info"><div><small>${project.category} · индивидуальный проект</small><h3>${project.title}</h3></div><span>${String(index + 1).padStart(2, '0')}</span></div>
     </a>`).join('');

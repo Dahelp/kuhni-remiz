@@ -14,7 +14,7 @@ function renderProjects(filter = 'Все') {
   const projects = filter === 'Все' ? window.REMIZ_PROJECTS : window.REMIZ_PROJECTS.filter(project => project.category === filter);
   document.querySelector('#projects-count').textContent = `${projects.length} ${projects.length === 1 ? 'проект' : projects.length < 5 ? 'проекта' : 'проектов'}`;
   grid.innerHTML = projects.map((project, index) => `
-    <a class="portfolio-item ${index % 7 === 0 ? 'wide' : ''}" href="project.html?id=${project.id}">
+    <a class="portfolio-item ${index % 7 === 0 ? 'wide' : ''}" href="/proekty/${project.id}/">
       <div class="portfolio-image"><img src="${project.cover}" alt="${project.title}" loading="lazy"><span>Открыть проект ↗</span></div>
       <div class="portfolio-caption"><div><small>${project.category}</small><h2>${project.title}</h2></div><b>${String(project.order).padStart(2, '0')}</b></div>
     </a>`).join('');

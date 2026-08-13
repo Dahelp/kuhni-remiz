@@ -2,6 +2,19 @@ DirectoryIndex index.html index.php
 Options -Indexes
 AddDefaultCharset UTF-8
 
+RewriteEngine On
+RewriteCond %{THE_REQUEST} \s/+index\.html(?:[?\s]) [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+portfolio\.html(?:[?\s]) [NC]
+RewriteRule ^portfolio\.html$ /proekty/ [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+privacy\.html(?:[?\s]) [NC]
+RewriteRule ^privacy\.html$ /politika-konfidencialnosti/ [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+project\.html\?id=([^&\s]+) [NC]
+RewriteRule ^project\.html$ /proekty/%1/ [R=301,L,NE]
+RewriteRule ^proekty/?$ portfolio.html [L]
+RewriteRule ^proekty/([a-z0-9-]+)/?$ project.html?id=$1 [L,QSA]
+RewriteRule ^politika-konfidencialnosti/?$ privacy.html [L]
+
 <FilesMatch "\.(md|log|ini)$">
   Require all denied
 </FilesMatch>
