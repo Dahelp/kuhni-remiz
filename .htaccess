@@ -2,13 +2,6 @@ DirectoryIndex index.html index.php
 Options -Indexes
 AddDefaultCharset UTF-8
 
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteCond %{HTTPS} !=on [OR]
-  RewriteCond %{HTTP_HOST} !^kuhni-remiz\.ru$ [NC]
-  RewriteRule ^ https://kuhni-remiz.ru%{REQUEST_URI} [R=301,L]
-</IfModule>
-
 <FilesMatch "\.(md|log|ini)$">
   Require all denied
 </FilesMatch>
