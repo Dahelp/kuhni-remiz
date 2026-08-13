@@ -35,11 +35,6 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
 
-document.querySelectorAll('.material-row').forEach(row => row.addEventListener('click', () => {
-  document.querySelectorAll('.material-row').forEach(item => item.classList.remove('active'));
-  row.classList.add('active');
-}));
-
 document.querySelector('[data-lead-form]')?.addEventListener('submit', async event => {
   event.preventDefault();
   const form = event.currentTarget;
