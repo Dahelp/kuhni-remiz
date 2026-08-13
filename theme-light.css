@@ -1,0 +1,19 @@
+/* Light, image-led presentation for portfolio and service pages. */
+.info-page{background:#f6f2eb}
+.info-header{background:rgba(247,245,241,.96);color:var(--ink);border-bottom:1px solid var(--line);position:relative;z-index:5}
+.info-hero{min-height:560px;padding-top:110px;padding-bottom:90px;position:relative;overflow:hidden;background:#e8e1d7;display:flex;flex-direction:column;justify-content:center}
+.info-hero::before{content:"";position:absolute;inset:0 0 0 47%;background:url('assets/portfolio/kitchen-04/01.webp') center/cover no-repeat;filter:saturate(.65)}
+.info-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#e8e1d7 0%,#e8e1d7 43%,rgba(232,225,215,.86) 53%,rgba(232,225,215,.08) 82%)}
+.info-hero>*{position:relative;z-index:1}.info-hero .kicker{color:#7c695d}.info-hero h1{max-width:760px}.info-hero h1 em{color:#776f65}.info-lead{max-width:600px}
+.info-content{padding-top:110px;padding-bottom:130px;background:linear-gradient(180deg,#faf7f1,#f1ece4)}
+.info-grid article{background:rgba(255,255,255,.72);padding:46px 38px;min-height:235px;transition:.25s}.info-grid article:hover{background:#fff;transform:translateY(-4px)}
+.info-actions .button.primary{background:#6b7066;color:#fff;border-color:#6b7066}
+.inner-page{background:#f6f2eb}.inner-header,.inner-header.is-scrolled{background:rgba(247,245,241,.95);color:var(--ink);border-bottom:1px solid var(--line);backdrop-filter:blur(16px)}.inner-header .menu-toggle span{background:var(--ink)}
+.portfolio-intro{min-height:720px;padding-top:190px;padding-bottom:100px;position:relative;overflow:hidden;background:#ddd2c5;color:var(--ink);display:flex;flex-direction:column;justify-content:center}
+.portfolio-intro::before{content:"";position:absolute;inset:0 0 0 48%;background:url('assets/portfolio/kitchen-03/01.webp') center/cover no-repeat;filter:saturate(.7)}
+.portfolio-intro::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#ddd2c5 0%,#ddd2c5 42%,rgba(221,210,197,.87) 54%,rgba(221,210,197,.08) 84%)}
+.portfolio-intro>*{position:relative;z-index:1}.portfolio-intro .kicker{color:#7c695d}.portfolio-intro h1{max-width:850px}.portfolio-intro h1 em{color:#6b7066}
+.portfolio-intro-bottom{margin:60px 0 0;max-width:760px;border-color:rgba(23,23,21,.22)}.portfolio-intro-bottom p{color:#5e5b55}.portfolio-intro-bottom span{color:#6c6861}
+.portfolio-content{padding-top:85px;background:linear-gradient(180deg,#faf7f1,#f1ece4)}
+@media(max-width:800px){.info-hero{min-height:520px}.info-hero::before{inset:0;opacity:.26}.info-hero::after{background:rgba(232,225,215,.8)}}
+@media(max-width:600px){.portfolio-intro{min-height:620px}.portfolio-intro::before{inset:0;opacity:.24}.portfolio-intro::after{background:rgba(221,210,197,.82)}}

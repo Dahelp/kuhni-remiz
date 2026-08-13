@@ -26,3 +26,7 @@ footer{padding:60px 7.8vw 28px;background:#171715;color:white}.footer-top{displa
 @media(max-height:820px) and (min-width:901px){.hero{min-height:820px}.hero-copy{top:44%;transform:translateY(-44%)}.hero-copy h1{font-size:clamp(54px,5.4vw,82px)}.hero-lead{margin:22px 0 28px}.hero-meta{bottom:30px}}
 @media(max-width:900px){.hero{min-height:760px}.hero-copy{top:47%;transform:translateY(-47%);max-width:none}.hero-meta span{white-space:normal}.numbers div{padding-left:22px;padding-right:22px}}
 @media(max-width:600px){.hero{min-height:720px}.hero-copy{padding-bottom:52px}.numbers div,.numbers div:first-child,.numbers div:last-child{padding-left:0;padding-right:0}.material-row,.material-row:hover,.material-row.active{padding-right:10px}}
+
+/* Keep the hero CTA fully inside the image at every desktop height. */
+.hero-copy{top:42%;transform:translateY(-42%);padding-bottom:0}.hero-copy .button{position:relative;z-index:3}.hero-meta{bottom:28px}.hero-shade{background:linear-gradient(90deg,rgba(25,25,22,.62),rgba(25,25,22,.08) 76%),linear-gradient(0deg,rgba(25,25,22,.38),transparent 58%)}
+@media(max-height:820px) and (min-width:901px){.hero{min-height:780px}.hero-copy{top:40%;transform:translateY(-40%)}.hero-copy h1{font-size:clamp(50px,5vw,76px)}.hero-copy .kicker{margin-bottom:16px}.hero-lead{margin:18px 0 24px}}
