@@ -65,3 +65,13 @@ footer{padding:78px 7.8vw 38px;background:linear-gradient(120deg,#5b4b43,#6b5b51
 .footer-bottom{padding-top:28px;color:rgba(255,250,243,.66);font-size:11px;line-height:1.6;letter-spacing:.08em}
 @media(max-width:900px){.approach-image{margin:28px 6vw 0;min-height:540px}.contact-form{padding:32px}.footer-seo-nav{font-size:12px}}
 @media(max-width:600px){.site-header{height:72px}.section{padding-top:90px;padding-bottom:90px}.approach-image{min-height:410px;margin:22px 5vw 0}.contact-form{padding:26px 20px}.footer-top{gap:34px}.footer-top p{font-size:14px}.footer-seo-nav{display:grid;grid-template-columns:1fr 1fr;gap:16px 20px;font-size:12px}.footer-bottom{font-size:10px}}
+
+/* Reduced-motion mode keeps a calm crossfade instead of freezing the hero. */
+@keyframes heroAccessibleFade{0%,3%{opacity:0}6%,22%{opacity:1}25%,100%{opacity:0}}
+@media(prefers-reduced-motion:reduce){
+  .hero-slide{animation:heroAccessibleFade 32s linear infinite!important;transform:none!important;will-change:opacity}
+  .hero-slide:nth-child(1){animation-delay:-1.2s!important}
+  .hero-slide:nth-child(2){animation-delay:6.8s!important}
+  .hero-slide:nth-child(3){animation-delay:14.8s!important}
+  .hero-slide:nth-child(4){animation-delay:22.8s!important}
+}
