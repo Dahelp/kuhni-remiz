@@ -6,9 +6,26 @@ const project = projects.find(item => item.id === id) || projects[0];
 if (project) {
   const index = projects.indexOf(project);
   const next = projects[(index + 1) % projects.length];
-  document.title = `${project.title} — проект Remiz`;
+  const seoTitle = project.seoTitle || `${project.title} — проект мебели на заказ`;
+  const canonicalUrl = `https://kuhni-remiz.ru/proekty/${encodeURIComponent(project.id)}/`;
+  const absoluteCover = `https://kuhni-remiz.ru/${project.cover}`;
+  document.title = `${seoTitle} | REMIZ`;
   document.querySelector('meta[name="description"]').content = `${project.title}. ${project.description}`;
-  document.querySelector('link[rel="canonical"]').href = `https://kuhni-remiz.ru/proekty/${encodeURIComponent(project.id)}/`;
+  document.querySelector('link[rel="canonical"]').href = canonicalUrl;
+  document.querySelector('meta[property="og:title"]').content = seoTitle;
+  document.querySelector('meta[property="og:description"]').content = project.description;
+  document.querySelector('meta[property="og:image"]').content = absoluteCover;
+  document.querySelector('meta[property="og:url"]').content = canonicalUrl;
+  document.querySelector('#project-schema').textContent = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: project.title,
+    description: project.description,
+    image: project.images.map(image => `https://kuhni-remiz.ru/${image}`),
+    category: project.category,
+    brand: {'@type': 'Brand', name: 'REMIZ'},
+    url: canonicalUrl
+  });
   document.querySelector('#project-hero').style.backgroundImage = `url('${project.cover}')`;
   document.querySelector('#project-category').textContent = project.category;
   document.querySelector('#project-title').textContent = project.title;
