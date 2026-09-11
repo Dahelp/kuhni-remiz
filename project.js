@@ -23,6 +23,7 @@ if (project) {
     description: project.description,
     image: project.images.map(image => `https://kuhni-remiz.ru/${image}`),
     category: project.category,
+    material: (project.specs || []).map(item => item[1]).join(', '),
     brand: {'@type': 'Brand', name: 'REMIZ'},
     url: canonicalUrl
   });
@@ -32,8 +33,10 @@ if (project) {
   document.querySelector('#project-subtitle').textContent = project.subtitle;
   document.querySelector('#project-count').textContent = `${String(index + 1).padStart(2, '0')} / ${String(projects.length).padStart(2, '0')}`;
   document.querySelector('#project-story-title').innerHTML = `Точная геометрия.<br><em>Продуманное наполнение.</em>`;
-  document.querySelector('#project-description').textContent = project.description;
+  document.querySelector('#project-description').innerHTML = [project.description, ...(project.story || [])].map(text => `<p>${text}</p>`).join('');
   document.querySelector('#project-details').innerHTML = project.details.map((detail, i) => `<li><span>0${i + 1}</span>${detail}</li>`).join('');
+  document.querySelector('#project-specs').innerHTML = (project.specs || []).map(([label, value]) => `<article><span>${label}</span><h3>${value}</h3></article>`).join('');
+  document.querySelector('#project-benefits').innerHTML = (project.benefits || []).map((benefit, i) => `<li><span>${String(i + 1).padStart(2, '0')}</span><p>${benefit}</p></li>`).join('');
   document.querySelector('#project-gallery').innerHTML = project.images.map((image, i) => `<figure class="${i === 0 ? 'gallery-wide' : ''}"><img src="${image}" alt="${project.title}, ракурс ${i + 1}" loading="${i === 0 ? 'eager' : 'lazy'}"><figcaption>${String(i + 1).padStart(2, '0')} · ${project.title}</figcaption></figure>`).join('');
   document.querySelector('#next-project').href = `/proekty/${next.id}/`;
   document.querySelector('#next-category').textContent = next.category;
