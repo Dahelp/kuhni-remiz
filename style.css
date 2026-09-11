@@ -81,3 +81,41 @@ footer{padding:78px 7.8vw 38px;background:linear-gradient(120deg,#5b4b43,#6b5b51
 .hero-meta{bottom:28px}
 @media(max-width:900px){.hero-copy{top:auto;bottom:118px;transform:none;padding:0}}
 @media(max-width:600px){.hero-copy{bottom:112px}.hero-meta{bottom:22px}}
+
+/* Readable typography for the home page */
+body:not(.inner-page):not(.info-page):not(.legal-page){font-size:16px}
+body:not(.inner-page):not(.info-page):not(.legal-page) .desktop-nav{font-size:13px}
+body:not(.inner-page):not(.info-page):not(.legal-page) .phone{font-size:14px}
+body:not(.inner-page):not(.info-page):not(.legal-page) .kicker{font-size:13px;line-height:1.5}
+body:not(.inner-page):not(.info-page):not(.legal-page) .button{font-size:12px}
+body:not(.inner-page):not(.info-page):not(.legal-page) .hero-lead{font-size:18px}
+body:not(.inner-page):not(.info-page):not(.legal-page) .hero-meta span{font-size:11px;line-height:1.5}
+body:not(.inner-page):not(.info-page):not(.legal-page) .scroll-hint{font-size:11px}
+body:not(.inner-page):not(.info-page):not(.legal-page) .section-index{font-size:12px}
+body:not(.inner-page):not(.info-page):not(.legal-page) .manifesto-grid p{font-size:17px;line-height:1.75}
+body:not(.inner-page):not(.info-page):not(.legal-page) .numbers span{font-size:13px;line-height:1.55}
+body:not(.inner-page):not(.info-page):not(.legal-page) .text-link{font-size:13px}
+body:not(.inner-page):not(.info-page):not(.legal-page) .project-info small{font-size:11px}
+body:not(.inner-page):not(.info-page):not(.legal-page) .project-info>span{font-size:12px}
+body:not(.inner-page):not(.info-page):not(.legal-page) .image-note{font-size:12px}
+body:not(.inner-page):not(.info-page):not(.legal-page) .approach-copy>p:not(.kicker){font-size:17px;line-height:1.75}
+body:not(.inner-page):not(.info-page):not(.legal-page) .approach-copy li{font-size:16px;line-height:1.5;padding:19px 0}
+body:not(.inner-page):not(.info-page):not(.legal-page) .approach-copy li b{font-size:12px}
+body:not(.inner-page):not(.info-page):not(.legal-page) .heading-note{font-size:16px;line-height:1.7}
+body:not(.inner-page):not(.info-page):not(.legal-page) .material-row span{font-size:12px}
+body:not(.inner-page):not(.info-page):not(.legal-page) .material-row small{font-size:15px}
+body:not(.inner-page):not(.info-page):not(.legal-page) .timeline>article>span{font-size:12px}
+body:not(.inner-page):not(.info-page):not(.legal-page) .timeline p{font-size:16px;line-height:1.6}
+body:not(.inner-page):not(.info-page):not(.legal-page) .contact-copy>p:last-child{font-size:17px;line-height:1.75}
+body:not(.inner-page):not(.info-page):not(.legal-page) .contact-form label>span{font-size:12px}
+body:not(.inner-page):not(.info-page):not(.legal-page) .contact-form input,
+body:not(.inner-page):not(.info-page):not(.legal-page) .contact-form textarea{font-size:17px;padding:14px 0}
+body:not(.inner-page):not(.info-page):not(.legal-page) .consent{font-size:12px;line-height:1.5}
+body:not(.inner-page):not(.info-page):not(.legal-page) .form-status{font-size:14px}
+
+@media(max-width:600px){
+  body:not(.inner-page):not(.info-page):not(.legal-page) .hero-lead{font-size:16px}
+  body:not(.inner-page):not(.info-page):not(.legal-page) .hero-meta span{font-size:10px;max-width:31%}
+  body:not(.inner-page):not(.info-page):not(.legal-page) .manifesto-grid p{font-size:16px}
+  body:not(.inner-page):not(.info-page):not(.legal-page) .timeline p{font-size:15px}
+}
