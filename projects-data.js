@@ -1,7 +1,7 @@
 window.REMIZ_PROJECTS = [
   {
     "id": "kitchen-01",
-    "title": "Кухня «Орех и графит»",
+    "title": "Проект «Тихая архитектура»",
     "category": "Кухни",
     "order": 1,
     "cover": "assets/portfolio/kitchen-01/02.webp",
@@ -22,7 +22,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "kitchen-02",
-    "title": "Кухня «Светлая классика»",
+    "title": "Проект «Наследие»",
     "category": "Кухни",
     "order": 2,
     "cover": "assets/portfolio/kitchen-02/01.webp",
@@ -43,7 +43,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "kitchen-03",
-    "title": "Кухня «Мягкая геометрия»",
+    "title": "Проект «Воздушная линия»",
     "category": "Кухни",
     "order": 3,
     "cover": "assets/portfolio/kitchen-03/01.webp",
@@ -64,7 +64,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "kitchen-04",
-    "title": "Кухня «Графит и камень»",
+    "title": "Проект «Монолит»",
     "category": "Кухни",
     "order": 4,
     "cover": "assets/portfolio/kitchen-04/02.webp",
@@ -84,7 +84,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "wardrobe-01",
-    "title": "Гардеробная «Тёмный каркас»",
+    "title": "Проект «Галерея»",
     "category": "Гардеробные",
     "order": 5,
     "cover": "assets/portfolio/wardrobe-01/01.webp",
@@ -104,7 +104,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "wardrobe-02",
-    "title": "Гардеробная «Стеклянный куб»",
+    "title": "Проект «Прозрачная граница»",
     "category": "Гардеробные",
     "order": 6,
     "cover": "assets/portfolio/wardrobe-02/03.webp",
@@ -125,7 +125,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "wardrobe-03",
-    "title": "Гардеробная «Белая галерея»",
+    "title": "Проект «Личная территория»",
     "category": "Гардеробные",
     "order": 7,
     "cover": "assets/portfolio/wardrobe-03/03.webp",
@@ -146,7 +146,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "wardrobe-04",
-    "title": "Гардеробная «Тёплая витрина»",
+    "title": "Проект «Приватная коллекция»",
     "category": "Гардеробные",
     "order": 8,
     "cover": "assets/portfolio/wardrobe-04/01.webp",
@@ -167,7 +167,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "tv-wall-01",
-    "title": "ТВ-зона «Мрамор и рейки»",
+    "title": "Проект «Вертикаль»",
     "category": "ТВ-зоны",
     "order": 9,
     "cover": "assets/portfolio/tv-wall-01/02.webp",
@@ -187,7 +187,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "tv-wall-02",
-    "title": "ТВ-зона «Светлый монолит»",
+    "title": "Проект «Баланс»",
     "category": "ТВ-зоны",
     "order": 10,
     "cover": "assets/portfolio/tv-wall-02/01.webp",
@@ -207,7 +207,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "tv-wall-03",
-    "title": "ТВ-зона «Парящая консоль»",
+    "title": "Проект «Невесомость»",
     "category": "ТВ-зоны",
     "order": 11,
     "cover": "assets/portfolio/tv-wall-03/02.webp",
@@ -227,7 +227,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "cabinet-01",
-    "title": "Шкаф «Шалфейные линии»",
+    "title": "Проект «Первое впечатление»",
     "category": "Шкафы",
     "order": 12,
     "cover": "assets/portfolio/cabinet-01/03.webp",
@@ -248,7 +248,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "cabinet-02",
-    "title": "Шкаф «Белая классика»",
+    "title": "Проект «Классическая нота»",
     "category": "Шкафы",
     "order": 13,
     "cover": "assets/portfolio/cabinet-02/01.webp",
@@ -269,7 +269,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "cabinet-03",
-    "title": "Шкаф «Круглый акцент»",
+    "title": "Проект «Орбита»",
     "category": "Шкафы",
     "order": 14,
     "cover": "assets/portfolio/cabinet-03/02.webp",
@@ -290,7 +290,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "cabinet-04",
-    "title": "Шкаф «Песочный ритм»",
+    "title": "Проект «Тихое утро»",
     "category": "Шкафы",
     "order": 15,
     "cover": "assets/portfolio/cabinet-04/02.webp",
@@ -311,7 +311,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "cabinet-05",
-    "title": "Шкаф «Графичная грань»",
+    "title": "Проект «Грань»",
     "category": "Шкафы",
     "order": 16,
     "cover": "assets/portfolio/cabinet-05/01.webp",
@@ -332,7 +332,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "cabinet-06",
-    "title": "Шкаф «Латунный ритм»",
+    "title": "Проект «Золотое сечение»",
     "category": "Шкафы",
     "order": 17,
     "cover": "assets/portfolio/cabinet-06/01.webp",
@@ -353,7 +353,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "cabinet-07",
-    "title": "Шкаф «Линии графита»",
+    "title": "Проект «Перспектива»",
     "category": "Шкафы",
     "order": 18,
     "cover": "assets/portfolio/cabinet-07/02.webp",
@@ -374,7 +374,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "cabinet-08",
-    "title": "Шкаф «Изумрудная геометрия»",
+    "title": "Проект «Глубина»",
     "category": "Шкафы",
     "order": 19,
     "cover": "assets/portfolio/cabinet-08/01.webp",
@@ -395,7 +395,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "cabinet-09",
-    "title": "Шкаф «Тёплый орех»",
+    "title": "Проект «Цельный объём»",
     "category": "Шкафы",
     "order": 20,
     "cover": "assets/portfolio/cabinet-09/02.webp",
@@ -416,7 +416,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "cabinet-10",
-    "title": "Шкаф «Слоновая кость»",
+    "title": "Проект «Элегия»",
     "category": "Шкафы",
     "order": 21,
     "cover": "assets/portfolio/cabinet-10/02.webp",
@@ -437,7 +437,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "cabinet-11",
-    "title": "Шкаф «Парадная анфилада»",
+    "title": "Проект «Анфилада»",
     "category": "Шкафы",
     "order": 22,
     "cover": "assets/portfolio/cabinet-11/02.webp",
@@ -458,7 +458,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "cabinet-12",
-    "title": "Шкаф «Белая решётка»",
+    "title": "Проект «Свет сквозь стекло»",
     "category": "Шкафы",
     "order": 23,
     "cover": "assets/portfolio/cabinet-12/02.webp",
@@ -479,7 +479,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "cabinet-13",
-    "title": "Шкаф «Графитовая классика»",
+    "title": "Проект «Строгая симметрия»",
     "category": "Шкафы",
     "order": 24,
     "cover": "assets/portfolio/cabinet-13/02.webp",
@@ -500,7 +500,7 @@ window.REMIZ_PROJECTS = [
   },
   {
     "id": "cabinet-14",
-    "title": "Шкаф «Белый дуб»",
+    "title": "Проект «Горизонт»",
     "category": "Шкафы",
     "order": 25,
     "cover": "assets/portfolio/cabinet-14/01.webp",
