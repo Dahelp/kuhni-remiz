@@ -119,3 +119,16 @@ body:not(.inner-page):not(.info-page):not(.legal-page) .form-status{font-size:14
   body:not(.inner-page):not(.info-page):not(.legal-page) .manifesto-grid p{font-size:16px}
   body:not(.inner-page):not(.info-page):not(.legal-page) .timeline p{font-size:15px}
 }
+
+/* Mobile layout must override the later desktop visual refinements. */
+@media(max-width:900px){
+  .approach{grid-template-columns:1fr}
+  .approach-image{width:auto}
+}
+@media(max-width:600px){
+  .approach-image{width:100%;min-height:440px;margin:22px 0 0}
+  .approach-copy{padding:54px 5vw 72px}
+  .material-row{grid-template-columns:38px minmax(0,1fr) 25px;row-gap:6px;align-items:start}
+  .material-row small{display:block;grid-column:2 / 4;font-size:13px;line-height:1.5;padding-right:6px}
+  .material-row i{grid-column:3;grid-row:1;justify-self:end}
+}
