@@ -24,16 +24,7 @@ mobileLinks.forEach(link => link.addEventListener('click', () => {
   toggle.setAttribute('aria-expanded', 'false');
 }));
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: .12 });
-
-document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+window.REMIZ_REVEAL?.refresh();
 
 document.querySelector('[data-lead-form]')?.addEventListener('submit', async event => {
   event.preventDefault();

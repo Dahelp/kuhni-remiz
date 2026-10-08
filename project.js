@@ -37,10 +37,11 @@ if (project) {
   document.querySelector('#project-details').innerHTML = project.details.map((detail, i) => `<li><span>0${i + 1}</span>${detail}</li>`).join('');
   document.querySelector('#project-specs').innerHTML = (project.specs || []).map(([label, value]) => `<article><span>${label}</span><h3>${value}</h3></article>`).join('');
   document.querySelector('#project-benefits').innerHTML = (project.benefits || []).map((benefit, i) => `<li><span>${String(i + 1).padStart(2, '0')}</span><p>${benefit}</p></li>`).join('');
-  document.querySelector('#project-gallery').innerHTML = project.images.map((image, i) => `<figure class="${i === 0 ? 'gallery-wide' : ''}"><img src="${image}" alt="${project.title}, ракурс ${i + 1}" loading="${i === 0 ? 'eager' : 'lazy'}"><figcaption>${String(i + 1).padStart(2, '0')} · ${project.title}</figcaption></figure>`).join('');
+  document.querySelector('#project-gallery').innerHTML = project.images.map((image, i) => `<figure class="${i === 0 ? 'gallery-wide' : ''}"><img data-src="${image}" alt="${project.title}, ракурс ${i + 1}" loading="lazy" decoding="async" fetchpriority="low"><figcaption>${String(i + 1).padStart(2, '0')} · ${project.title}</figcaption></figure>`).join('');
   document.querySelector('#next-project').href = `/proekty/${next.id}/`;
   document.querySelector('#next-category').textContent = next.category;
   document.querySelector('#next-title').textContent = next.title;
+  window.REMIZ_REVEAL?.refresh(document.querySelector('#project-root'));
 }
 
 const toggle = document.querySelector('.menu-toggle');

@@ -15,9 +15,10 @@ function renderProjects(filter = 'Все') {
   document.querySelector('#projects-count').textContent = `${projects.length} ${projects.length === 1 ? 'проект' : projects.length < 5 ? 'проекта' : 'проектов'}`;
   grid.innerHTML = projects.map((project, index) => `
     <a class="portfolio-item ${index % 7 === 0 ? 'wide' : ''}" href="/proekty/${project.id}/">
-      <div class="portfolio-image"><img src="${project.cover}" alt="${project.title}" loading="lazy"><span>Открыть проект ↗</span></div>
+      <div class="portfolio-image"><img data-src="${project.cover}" alt="${project.title}" loading="lazy" decoding="async" fetchpriority="low"><span>Открыть проект ↗</span></div>
       <div class="portfolio-caption"><div><small>${project.category}</small><h2>${project.title}</h2></div><b>${String(project.order).padStart(2, '0')}</b></div>
     </a>`).join('');
+  window.REMIZ_REVEAL?.refresh(grid);
 }
 
 filters.forEach(button => button.addEventListener('click', () => {

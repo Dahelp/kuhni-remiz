@@ -33,3 +33,70 @@
     footerHost.replaceWith(footer);
   }
 })();
+
+// Shared motion system for every page. Dynamic pages call refresh() after
+// rendering their cards; static content is registered immediately below.
+(() => {
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const revealObserver = !reducedMotion && 'IntersectionObserver' in window
+    ? new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      });
+    }, { threshold: .1, rootMargin: '0px 0px -8%' })
+    : null;
+
+  const lazyObserver = 'IntersectionObserver' in window
+    ? new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        loadImage(entry.target);
+        lazyObserver.unobserve(entry.target);
+      });
+    }, { rootMargin: '500px 0px' })
+    : null;
+
+  function loadImage(image) {
+    if (!image.dataset.src) return;
+    image.addEventListener('load', () => image.classList.add('is-loaded'), { once: true });
+    image.src = image.dataset.src;
+    image.removeAttribute('data-src');
+    if (image.complete) image.classList.add('is-loaded');
+  }
+
+  function refresh(root = document) {
+    const selectors = [
+      '.hero-copy > *', '.hero-meta', '.section-index', '.section-heading > *',
+      '.manifesto-copy > *', '.numbers > *', '.project-card', '.approach-image',
+      '.approach-copy > *', '.material-row', '.process-intro > *', '.timeline > *',
+      '.contact > *', '.info-hero > *', '.info-grid > *', '.info-section', '.info-actions',
+      '.portfolio-intro > *', '.portfolio-filters', '.portfolio-item', '.portfolio-cta > *',
+      '.project-hero-copy > *', '.project-hero-count', '.project-story > *',
+      '.project-product-heading > *', '.project-specs > *', '.project-benefits > *',
+      '.project-benefits li', '.project-gallery figure', '.next-project > *'
+    ];
+
+    root.querySelectorAll(selectors.join(',')).forEach(element => {
+      if (element.dataset.revealRegistered === 'true') return;
+      element.dataset.revealRegistered = 'true';
+      element.classList.add('reveal');
+      const parent = element.parentElement;
+      const sequence = parent ? [...parent.children].filter(child => selectors.some(selector => child.matches(selector))) : [];
+      const index = sequence.indexOf(element);
+      if (index > 0) element.style.setProperty('--reveal-delay', `${Math.min(index * 110, 330)}ms`);
+      if (revealObserver) revealObserver.observe(element);
+      else element.classList.add('visible');
+    });
+
+    root.querySelectorAll('img[data-src]').forEach(image => {
+      image.classList.add('lazy-image');
+      if (lazyObserver) lazyObserver.observe(image);
+      else loadImage(image);
+    });
+  }
+
+  window.REMIZ_REVEAL = { refresh };
+  refresh();
+})();
