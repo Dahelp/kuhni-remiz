@@ -12,7 +12,7 @@ RewriteRule ^privacy\.html$ /politika-konfidencialnosti/ [R=301,L]
 RewriteCond %{THE_REQUEST} \s/+project\.html\?id=([^&\s]+) [NC]
 RewriteRule ^project\.html$ /proekty/%1/ [R=301,L,NE]
 RewriteRule ^proekty/?$ portfolio.html [L]
-RewriteRule ^proekty/([a-z0-9-]+)/?$ project.html?id=$1 [L,QSA]
+RewriteRule ^proekty/([a-z0-9-]+)/?$ project.php?id=$1 [L,QSA]
 RewriteRule ^politika-konfidencialnosti/?$ privacy.html [L]
 
 <FilesMatch "\.(md|log|ini)$">
