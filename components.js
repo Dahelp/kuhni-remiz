@@ -68,6 +68,7 @@
 
   function refresh(root = document) {
     const selectors = [
+      '.reveal',
       '.hero-copy > *', '.hero-meta', '.section-index', '.section-heading > *',
       '.manifesto-copy > *', '.numbers > *', '.project-card', '.approach-image',
       '.approach-copy > *', '.material-row', '.process-intro > *', '.timeline > *',

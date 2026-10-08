@@ -132,3 +132,35 @@ body:not(.inner-page):not(.info-page):not(.legal-page) .form-status{font-size:14
   .material-row small{display:block;grid-column:2 / 4;font-size:13px;line-height:1.5;padding-right:6px}
   .material-row i{grid-column:3;grid-row:1;justify-self:end}
 }
+
+/* Mobile reading flow: content remains visible while scrolling and images fill the screen. */
+@media(max-width:600px){
+  .reveal{opacity:1;transform:none;filter:none;transition:none;will-change:auto}
+  .section{padding:64px 5vw 72px}
+  .manifesto{padding-bottom:48px}
+  .projects{padding-top:56px;padding-bottom:32px}
+  .materials,.process{padding-top:56px;padding-bottom:64px}
+  .section-index{margin-bottom:28px}
+  .section-heading{margin-bottom:32px}
+  .manifesto-copy{margin:0}
+  .manifesto-grid{margin-top:28px;gap:16px}
+  .numbers{margin-top:42px}
+  .numbers div{padding:18px 0;align-items:center}
+  .projects .project-grid{margin-top:0}
+  .project-card,.project-card.project-main{min-height:420px;margin-bottom:14px}
+  .project-card:not(.project-main){min-height:320px}
+  .approach{display:block;min-height:0}
+  .approach-image{height:clamp(360px,105vw,480px);min-height:0;margin:0;box-shadow:none}
+  .approach-image img{height:100%;object-fit:cover;transform:none}
+  .approach-copy{padding:48px 5vw 64px}
+  .approach-copy>p:not(.kicker){margin:24px 0}
+  .approach-copy ul{margin-bottom:28px}
+  .process-intro{margin-bottom:38px}
+  .timeline article,.timeline article+article{padding:22px 0}
+  .timeline div{margin-top:16px}
+  .contact{gap:32px}
+}
+@media(max-width:360px){
+  .hero-copy h1{font-size:36px}
+  .hero-meta span{font-size:9px}
+}
