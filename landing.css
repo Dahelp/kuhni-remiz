@@ -1,0 +1,10 @@
+.landing-page .info-hero::before{background-image:var(--landing-image)}
+.landing-page .info-hero{min-height:620px}
+.landing-page .info-content{padding-top:90px}
+.landing-gallery{display:grid;grid-template-columns:1.3fr .7fr;gap:18px;margin:80px 0 0}
+.landing-gallery figure{margin:0;min-height:340px;overflow:hidden;background:#e5ddd2}
+.landing-gallery figure:first-child{grid-row:span 2;min-height:698px}
+.landing-gallery img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.landing-gallery figure:hover img{transform:scale(1.035)}
+.landing-note{max-width:740px;margin:30px 0 0;color:#686057;font-size:14px;line-height:1.7}
+@media(max-width:800px){.landing-page .info-hero{min-height:540px}.landing-gallery{grid-template-columns:1fr;gap:12px;margin-top:55px}.landing-gallery figure,.landing-gallery figure:first-child{min-height:310px;grid-row:auto}}

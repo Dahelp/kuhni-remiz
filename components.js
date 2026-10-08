@@ -29,7 +29,7 @@
   const footerHost = document.querySelector('[data-site-footer]');
   if (footerHost) {
     const footer = document.createElement('footer');
-    footer.innerHTML = `<div class="footer-top">${brand}<p>Шоурум<br>МКАД 24-й километр, д. 1</p><a href="tel:+79262128677">+7 926 212 86 77</a></div><nav class="footer-seo-nav" aria-label="Разделы сайта"><a href="/catalog/">Каталог</a><a href="/proekty/">Проекты</a><a href="/materialy/">Материалы</a><a href="/ceny/">Цены</a><a href="/o-kompanii/">О компании</a><a href="/garantiya/">Гарантия</a><a href="/oplata-i-dostavka/">Доставка и монтаж</a><a href="/kontakty/">Контакты</a></nav><div class="footer-bottom"><span>© 2026 Кухни Ремиз</span><span>Москва и Московская область</span><a href="/politika-konfidencialnosti/">Политика конфиденциальности</a></div>`;
+    footer.innerHTML = `<div class="footer-top">${brand}<p>Шоурум<br>МКАД 24-й километр, д. 1</p><a href="tel:+79262128677">+7 926 212 86 77</a></div><nav class="footer-seo-nav" aria-label="Разделы сайта"><a href="/catalog/">Каталог</a><a href="/kuhni-na-zakaz/">Кухни на заказ</a><a href="/shkafy-na-zakaz/">Шкафы на заказ</a><a href="/garderobnye-na-zakaz/">Гардеробные</a><a href="/proekty/">Проекты</a><a href="/materialy/">Материалы</a><a href="/ceny/">Цены</a><a href="/o-kompanii/">О компании</a><a href="/garantiya/">Гарантия</a><a href="/oplata-i-dostavka/">Доставка и монтаж</a><a href="/kontakty/">Контакты</a></nav><div class="footer-bottom"><span>© 2026 Кухни Ремиз</span><span>Москва и Московская область</span><a href="/politika-konfidencialnosti/">Политика конфиденциальности</a></div>`;
     footerHost.replaceWith(footer);
   }
 })();
